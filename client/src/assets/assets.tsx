@@ -2,7 +2,7 @@
 /* eslint-disable react-refresh/only-export-components */
 
 import React from "react";
-import { SiX, SiFacebook, SiInstagram } from "@icons-pack/react-simple-icons";
+import { SiX, SiFacebook, SiInstagram, SiThreads } from "@icons-pack/react-simple-icons";
 import img_1 from "./img-1.jpg";
 import img_2 from "./img-2.jpg";
 import img_3 from "./img-3.jpg";
@@ -26,6 +26,8 @@ export const PLATFORMS: Platform[] = [
     { id: "linkedin", name: "LinkedIn", icon: LinkedInIcon, description: "Publish to your profile & company pages" },
     { id: "facebook", name: "Facebook", icon: SiFacebook, description: "Manage your pages and profile" },
     { id: "instagram", name: "Instagram", icon: SiInstagram, description: "Share photos, reels and stories" },
+    { id: "threads", name: "Threads", icon: SiThreads, description: "Share text updates and join conversations" },
+
 ];
 
 export const dummyPostsData: any = [

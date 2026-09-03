@@ -8,6 +8,7 @@ import {
   LogOutIcon,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import { useAuth } from "../context/AuthContext";
 
 type SidebarProps = {
   isOpen: boolean;
@@ -24,12 +25,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
   const location = useLocation();
 
   // TODO: replace with real auth context (e.g. useAuth()) once wired up
-  const { logout, user } = {
-    logout: () => {
-      window.location.href = "/";
-    },
-    user: { name: "John Doe", email: "john@gmail.com" },
-  };
+  const { logout, user } = useAuth();
 
   const navItems: NavItem[] = [
     { name: "Dashboard", icon: LayoutDashboardIcon, path: "/dashboard" },
